@@ -3,14 +3,12 @@ function obtenerConsumoMensual(){
     return consumo;
 }
 let consumoUsuario = obtenerConsumoMensual();
-console.log("Consumo ingresado:", consumoUsuario);
 
 function obtenerTarifaBase(){
     let tarifa = Number(prompt("Ingrese la tarifa base por kWh:"));
     return tarifa;
 }
 let tarifa = obtenerTarifaBase();
-console.log("tarifa base:", tarifa);
 
 const cargoFijo = function(){
     let cargoFijo = Number(prompt("Ingrese el valor cargo fijo por servicio: "))
@@ -25,13 +23,13 @@ const valorIva = function(){
 let Iva = valorIva()
 
 const calsubtotal = () => {
-    let subtotal = (consumousruario * tarifa)
-    return subtotal; 
+    SubTotal = (consumoUsuario() * tarifa())
+    return SubTotal;
 }
 let SubTotal = calsubtotal();
 
 const ivaaplicado = () => {
-    let ivaa = (SubTotal * (Iva / 100));
+    ivaa = (SubTotal * (Iva / 100));
     return ivaa;
 }
 let ivaAplicado = ivaaplicado();
@@ -41,3 +39,11 @@ const totalapagar = () => {
     return total
 }
 let totalPagar = totalapagar();
+function mostrar() {
+    console.log ("Su consumo de este mes fue de: " + consumoUsuario() + " kWh");
+    console.log("La tarifa esta en : " + tarifa() + " por kWh");
+    console.log("Su tarifa base mensual es: " + $ + cargo());
+    console.log("El iva es del:" + Iva() + "%");
+    console.log("")
+}
+mostrar();
