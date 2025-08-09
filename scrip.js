@@ -18,4 +18,8 @@ const cargoFijo = function(){
 }
 let cargo = cargoFijo()
 
-
+const valorIva = function(){
+    let cargoIva = Number(prompt("Ingrese el valor del IVA: "))
+    return cargoIva
+}
+let Iva = valorIva()
