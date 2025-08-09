@@ -29,3 +29,9 @@ const calsubtotal = () => {
     return subtotal; 
 }
 let SubTotal = calsubtotal();
+
+const ivaaplicado = () => {
+    let ivaa = (SubTotal * (Iva / 100));
+    return ivaa;
+}
+let ivaAplicado = ivaaplicado();
