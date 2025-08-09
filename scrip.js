@@ -23,3 +23,9 @@ const valorIva = function(){
     return cargoIva
 }
 let Iva = valorIva()
+
+const calsubtotal = () => {
+    let subtotal = (consumousruario * tarifa)
+    return subtotal; 
+}
+let SubTotal = calsubtotal();
