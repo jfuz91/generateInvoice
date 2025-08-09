@@ -35,3 +35,9 @@ const ivaaplicado = () => {
     return ivaa;
 }
 let ivaAplicado = ivaaplicado();
+
+const totalapagar = () => {
+    let total = SubTotal + ivaAplicado + cargo;
+    return total
+}
+let totalPagar = totalapagar();
